@@ -9,13 +9,13 @@ import 'candidates_screen.dart';
 import 'live_data_screen.dart';
 import 'firebase_options.dart';
 import 'login_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: firebaseOptions);
   runApp(const ClassElectionApp());
 }
-
 class ClassElectionApp extends StatelessWidget {
   const ClassElectionApp({super.key});
 
@@ -45,7 +45,6 @@ class ClassElectionApp extends StatelessWidget {
     );
   }
 }
-
 class ElectionHomeScreen extends StatefulWidget {
   const ElectionHomeScreen({super.key});
 
